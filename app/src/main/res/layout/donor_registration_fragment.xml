@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#beb71c1c">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="15dp"
+        android:background="?android:colorBackground">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.example.abhay.blooddonationapp.me.abhay.blooddonationapp.MainActivity"
+            tools:showIn="@layout/app_bar_main">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/blood_group"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="26dp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:prompt="@string/spinner_title"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/editTextBg"
+                    tools:layout_editor_absoluteX="159dp"
+                    tools:layout_editor_absoluteY="26dp" />
+                <!--<TextView-->
+                <!--android:id="@+id/blood_group"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="B+"-->
+                <!--tools:layout_editor_absoluteX="39dp"-->
+                <!--tools:layout_editor_absoluteY="26dp" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <!--<TextView-->
+                <!--android:id="@+id/textView4"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Name"-->
+                <!--tools:layout_editor_absoluteX="39dp"-->
+                <!--tools:layout_editor_absoluteY="155dp" />-->
+
+                <EditText
+                    android:id="@+id/donorName"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/enter_name"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/editTextBg"
+                    tools:layout_editor_absoluteX="159dp"
+                    tools:layout_editor_absoluteY="138dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <!--<TextView-->
+                <!--android:id="@+id/textView5"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Contact No"-->
+                <!--tools:layout_editor_absoluteX="39dp"-->
+                <!--tools:layout_editor_absoluteY="80dp" />-->
+
+                <EditText
+                    android:id="@+id/donorContact"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/enter_contact"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColorHint="@color/editTextBg"
+                    tools:layout_editor_absoluteX="159dp"
+                    tools:layout_editor_absoluteY="63dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <!--<TextView-->
+                <!--android:id="@+id/textView6"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Email I'd"-->
+                <!--tools:layout_editor_absoluteX="39dp"-->
+                <!--tools:layout_editor_absoluteY="80dp" />-->
+
+                <EditText
+                    android:id="@+id/donorEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/enter_email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/editTextBg"
+                    tools:layout_editor_absoluteX="159dp"
+                    tools:layout_editor_absoluteY="63dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/donorCity"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/enter_city"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/editTextBg"
+                    tools:layout_editor_absoluteX="159dp"
+                    tools:layout_editor_absoluteY="63dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="@string/available_for_emergency_situations"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="80dp" />
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/emergency_spinner"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emergency_switch"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="@string/frequent_donor"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="80dp" />
+
+                <Spinner
+                    android:id="@+id/frequent_donor_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_button_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/register_button" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/register"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

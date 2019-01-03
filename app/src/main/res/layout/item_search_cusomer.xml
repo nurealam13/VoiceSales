@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/next_layout_first"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:background="@drawable/custom_edittext"
+        android:orientation="horizontal" >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/customerNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_sub"
+                android:text="The databiz Software Ltd."
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

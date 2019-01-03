@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="companies">
+        <item>Select Company</item>
+    </string-array>
+    <string-array name="locations">
+        <item>Select Location</item>
+    </string-array>
+
+    <string-array name="payment_list">
+        <item>Cash </item>
+        <item>Credit</item>
+        <item>Both</item>
+    </string-array>
+    <string-array name="unit_type">
+        <item>Select Unit Type </item>
+
+    </string-array>
+</resources>
